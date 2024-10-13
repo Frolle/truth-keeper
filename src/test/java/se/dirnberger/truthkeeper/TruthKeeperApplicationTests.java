@@ -1,10 +1,10 @@
-package se.dirnberger.truthsayer_backend;
+package se.dirnberger.truthkeeper;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TruthsayerBackendApplicationTests {
+class TruthKeeperApplicationTests {
 
 	@Test
 	void contextLoads() {

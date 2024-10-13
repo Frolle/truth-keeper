@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'se.dirnberger.truthsayer-backend' is invalid and this project uses 'se.dirnberger.truthsayer_backend' instead.
+* The original package name 'se.dirnberger.truthsayer-backend' is invalid and this project uses 'se.dirnberger.truthkeeper' instead.
 
 # Getting Started
 

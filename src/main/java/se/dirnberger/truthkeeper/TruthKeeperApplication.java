@@ -1,13 +1,13 @@
-package se.dirnberger.truthsayer_backend;
+package se.dirnberger.truthkeeper;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TruthsayerBackendApplication {
+public class TruthKeeperApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TruthsayerBackendApplication.class, args);
+		SpringApplication.run(TruthKeeperApplication.class, args);
 	}
 
 }

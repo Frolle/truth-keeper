@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>se.dirnberger</groupId>
-	<artifactId>truthsayer-backend</artifactId>
+	<artifactId>truth-keeper</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>truthsayer-backend</name>
+	<name>truth-keeper</name>
 	<description>Backend for TruthSayer</description>
 	<url/>
 	<licenses>
@@ -89,6 +89,11 @@
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate.orm</groupId>
+			<artifactId>hibernate-envers</artifactId>
+			<version>6.5.2.Final</version>
 		</dependency>
 	</dependencies>
 
