@@ -9,7 +9,7 @@
             <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="content" type="varchar(255)">
+            <column name="statement" type="varchar(255)">
                 <constraints nullable="false" />
             </column>
             <column name="created_at" type="datetime">
@@ -25,7 +25,7 @@
             <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="content" type="varchar(255)">
+            <column name="statement" type="varchar(255)">
                 <constraints nullable="false" />
             </column>
             <column name="created_at" type="datetime">
