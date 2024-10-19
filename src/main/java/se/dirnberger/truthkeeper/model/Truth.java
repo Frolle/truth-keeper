@@ -1,5 +1,6 @@
 package se.dirnberger.truthkeeper.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -26,5 +27,6 @@ public class Truth {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "teller_id")
+    @JsonBackReference
     private TruthTeller teller;
 }

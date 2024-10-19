@@ -1,5 +1,6 @@
 package se.dirnberger.truthkeeper.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -21,5 +22,6 @@ public class TruthTeller {
     private String phoneNumber;
 
     @OneToMany(mappedBy = "teller", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonManagedReference
     private List<Truth> truths;
 }
