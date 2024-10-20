@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "truth-sayer.cors.origins",
+      "type": "java.lang.String",
+      "description": "The http(s) address to the url of the front-end."
+  }
+] }
