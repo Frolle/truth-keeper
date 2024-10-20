@@ -3,6 +3,7 @@ package se.dirnberger.truthkeeper.service;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import se.dirnberger.truthkeeper.exception.TruthNotFoundException;
 import se.dirnberger.truthkeeper.model.Truth;
 import se.dirnberger.truthkeeper.repository.TruthRepository;
 
@@ -42,7 +43,7 @@ public class TruthService {
 
     private Truth mapTruth(Truth oldTruth, Truth newTruth) {
         oldTruth.setTeller(newTruth.getTeller());
-        oldTruth.setContent(newTruth.getContent());
+        oldTruth.setStatement(newTruth.getStatement());
         return truthRepository.save(oldTruth);
     }
 
@@ -51,7 +52,7 @@ public class TruthService {
         if (truthRepository.existsById(id)) {
             truthRepository.deleteById(id);
         } else {
-            throw new RuntimeException(NOT_FOUND_MESSAGE + id);
+            throw new TruthNotFoundException(NOT_FOUND_MESSAGE + id);
         }
     }
 }
