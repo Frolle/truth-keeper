@@ -33,6 +33,11 @@ public class TruthController {
         return ResponseEntity.ok(truthService.getTruthById(id));
     }
 
+    @GetMapping("/random-truth")
+    public ResponseEntity<Truth> getRandomTruth() {
+        return ResponseEntity.ok(truthService.findRandomTruth());
+    }
+
     @PutMapping("/{id}")
     public ResponseEntity<Truth> updateTruth(@PathVariable Long id, @RequestBody Truth truth) {
         return ResponseEntity.ok(truthService.updateTruth(id, truth));
