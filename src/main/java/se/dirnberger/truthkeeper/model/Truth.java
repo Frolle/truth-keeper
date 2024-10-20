@@ -19,8 +19,8 @@ public class Truth {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "content")
-    private String content;
+    @Column(name = "statement")
+    private String statement;
 
     @Column(name = "created_at")
     private LocalDateTime createdAt;
